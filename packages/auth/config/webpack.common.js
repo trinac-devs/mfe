@@ -1,10 +1,8 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-
 module.exports = {
   module: {
     rules: [
       {
-        test: /\.m?js$/, // NOTE: Makes sure that we want any file that ends with m or js to be processed by babel
+        test: /\.m?js$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
@@ -16,9 +14,4 @@ module.exports = {
       },
     ],
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: './public/index.html',
-    }),
-  ],
 };
