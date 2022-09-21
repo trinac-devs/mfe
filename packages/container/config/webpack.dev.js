@@ -27,7 +27,7 @@ const devConfig = {
     }),
 
     new ModuleFederationPlugin({
-      name: 'auth',
+      name: 'container',
       remotes: {
         auth: 'auth@http://localhost:8082/remoteEntry.js',
       },

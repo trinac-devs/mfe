@@ -22,7 +22,7 @@ const prodConfig = {
     }),
 
     new ModuleFederationPlugin({
-      name: 'auth',
+      name: 'container',
       remotes: {
         auth: `auth@${domain}/auth/latest/remoteEntry.js`,
       },
